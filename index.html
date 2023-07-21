@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/laptop.css">
+	<link rel="stylesheet" href="css/tablet.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="icon-list.html">
+	<!--nhúng font awesome cdn để sử dụng icon-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!--nhúng link Bootstrap 5 để sử dụng thư viện này-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+		rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+		crossorigin="anonymous">
+	<title>Assignment 03</title>
+</head>
+<body>
+	<!--Hình nền trang web-->
+	<div class="img-banner">
+		<!--Code bao gồm hình background và Tên-->
+		<div class="img-filter">
+		</div>
+		<div id="banner" style="padding: 50px">
+			<h1 style="font-weight: 100;">Hoàng Văn Phúc</h1>
+			<span style="font-weight: lighter;">Full Stack Developer</span>
+		</div>
+	</div>
+	<!--menu trang web-->
+	<!---->
+	<section id="nav-bar">
+		<!--Sử dụng các class có sẵn tạo flex layout trong BOOTSTRAP 5 như d-flex; 
+			căn chỉnh giữa theo chiều ngang cho các items như justify-content-center
+			flex-container là class đặt thêm để tuỳ chỉnh-->
+		<nav class="d-flex justify-content-center flex-container">
+			<!--căn chỉnh nội dung chữ in hoa với text-uppercase trong BOOTSTRAP-->
+			<div class="text-uppercase menu">
+				<!--thẻ a và thẻ i cho phép dẫn tới vị trí liên kết và tạo icon-->
+				<a href="#target">
+					<i class="icon-user" style="color:rgb(32, 172, 248);"></i>
+					Thông tin
+				</a>
+			</div>
+			<!--căn chỉnh nội dung chữ in hoa với text-uppercase trong BOOTSTRAP-->
+			<div class="text-uppercase menu">
+				<a href="#job-info">
+					<i class="icon-doc-text-inv" style="color:rgb(32, 172, 248);"></i>
+					Lý lịch
+				</a>
+			</div>
+			<div class="avt-img">
+				<img src="images/anh.jpg" alt="" width="100%">
+			</div>
+			<!--căn chỉnh nội dung chữ in hoa với text-uppercase trong BOOTSTRAP-->
+			<div class="text-uppercase menu">
+				<a href="#certificate">
+					<i class="icon-mail-alt" style="color:rgb(32, 172, 248);"></i>
+					Chứng chỉ
+				</a>
+			</div>
+			<!--căn chỉnh nội dung chữ in hoa với text-uppercase trong BOOTSTRAP-->
+			<div class="text-uppercase menu">
+				<a href="#project">
+					<i class="icon-star-1" style="color:rgb(32, 172, 248);"></i>
+					Dự Án
+				</a>
+			</div>
+		</nav>
+	</section>
+	<!--Thông tin cá nhân-->
+	<section id="about" class="bg-grey">
+		<!--Sử dụng Grid layout để tạo-->
+		<div class="grid-container-infomyself">
+			<div id="target">
+				<div style="width: 100%;">
+					<h1  class="section-title">Mục tiêu nghề nghiệp</h1>
+					<p>
+						Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh
+						Nghiệp của FUNiX. Em mong muốn mình sẽ được làm việc với vị
+						trí <strong>Fullstack Developer</strong>, có thể vận dụng 
+						những kiến thức đã được trau dồi và không ngừng học hỏi để phát 
+						triển bản thân, cũng như hoàn thành tốt nhất công việc được giao.
+					</p>
+				</div>
+			</div>
+			<div id="personal-info">
+				<h1  class="section-title">Thông tin cá nhân</h1>
+				<div id="personal-container" style="display: none;">
+					<!--thông tin cá nhân sau khi nhập email và nhân button để xuất hiện-->
+					<ul>
+						<li><span><strong>Giới tính</strong></span> : Nam</li>
+						<li><span><strong>Ngày sinh</strong></span> : 08/05/2002</li>
+						<li><span><strong>Điện thoại</strong></span> : (+84) 981061795</li>
+						<li><span><strong>Email</strong></span> : phuchvfx23347@funix.edu.vn</li>
+						<li><span><strong>Địa chỉ</strong></span> : ktx khu A TPHCM, Dĩ An, Bình Dương</li>
+						<li>
+							<span><strong>Website</strong></span> : 
+							
+							<a href="https://abc.tech" 
+							target="_blank" style="text-decoration: none; 
+							color: rgba(84, 84, 84, 0.881);">https://abc.tech</a>
+						</li>
+					</ul>
+					<!--phần icon mạng xã hội để liên hệ-->
+					<table>
+						<tr>
+							<th style="width: 30px;">
+								<a href="https://twitter.com/i/flow/login" target="_blank">
+									<i class="icon-twitter" 
+									style="font-size: 20px; color:rgb(32, 172, 248);"></i>
+								</a>
+							</th>
+							<th style="width: 30px;">
+								<a href="https://vi-vn.facebook.com/login/device-based/regular/login/?login_attempt=1" target="_blank">
+									<i class="icon-facebook" 
+									style="font-size: 20px; color:rgb(32, 172, 248);"></i>
+								</a>
+							</th>
+							<th style="width: 30px;">
+								<a href="https://www.google.com.vn/?hl=vi" target="_blank">
+									<i class="icon-gplus" 
+									style="font-size: 20px; color:rgb(32, 172, 248);"></i>
+								</a>
+							</th>
+							<th style="width: 30px;">
+								<a href="https://www.linkedin.com/login" target="_blank">
+									<i class="icon-linkedin" 
+									style="font-size: 20px; color:rgb(32, 172, 248);"></i>
+								</a>
+							</th>
+						</tr>
+					</table> 
+					<!--phần dấu x để tắt phần thông tin cá nhân và trở lại form nhập email-->
+					<button onclick="cancelHandler(event)" onmousemove="onHide()" onmouseout="offHide()">
+						<i class="fa-solid fa-xmark" style="font-size: 17px;"></i>
+					</button>
+					<div id="Hide" style="display: none;">
+						<p><strong style="font-size: 15px; color: rgba(250, 63, 63,0.5);">Ẩn thông tin cá nhân</strong></p>
+					</div>
+				</div>
+				<!--form nhập email-->
+				<div id="form-container">
+					<form>
+						<input type="email" id="email" name="email" placeholder="Enter email"/>
+						<p id="emailVerification">Hãy nhập email để xác thực</p>
+						<button onclick="submitHandler(event)">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!--Thông tin về nghề nghiệp, học vấn-->
+	<section id="job-info">
+		<!--Thông tin về nghề nghiệp, học vấn cua laptop-->
+		<div id="job-infoLaptop">
+			<!--Sử dụng Grid layout để tạo-->
+			<div class="grid-container-jobinfo">
+				<!--onmousemove khi di chuột vào thẻ div job-info-table , hiển thị button viewMoreLess-->
+				<!--onmouseout khi di chuột vào thẻ div job-info-table , tắt hiển thị button viewMoreLess-->
+				<div class="job-info-table item-experience" onmousemove="onViewLaptop()" onmouseout="offViewLaptop()">
+					<div class="row-1-job">
+						<div class="col-1-job">
+							<h1 class="section-title">Kinh nghiệm</h1>
+						</div>
+						<div class="col-2-job">
+							<!--Sử dụng icon bằng thẻ i nhúng fontawesome-->
+							<i class="ic-toolbox" style="font-size: 40px;"></i>
+						</div>
+					</div>
+					<!--nút button VIEW MORE khi di chuột vào thẻ div job-info-table thì display block, di chuột ra display none-->
+					<!--khi click vào thì thay đổi giữ VIEW LESS và VIEW MORE bằng hàm viewMore()-->
+					<button id="viewMoreLessLaptop" class="viewMoreLess" onclick="viewMoreLaptop()" style="display: none;">
+						<p id="ctviewMoreLessLaptop" style="font-size: 14px; color: black;">
+							<i class="fa-solid fa-caret-up fa-flip-vertical" style="font-size: 18px;"></i>
+							VIEW MORE
+						</p>
+					</button>
+					<!--mặc định phần thông tin kinh nghiệm display none, khi click VIEW MORE thì display block, click tiếp thì display none-->
+					<div id="row-2-jobLaptop" class="row-2-job" style="display: none;">
+						<ul style="list-style-type: none;">
+							<!-- Dùng persudo elements tạo time line dấu chấm xanh cho từng thẻ li -->
+							<li>
+								<p>
+									<!--Chữ "Hiện tại" bỏ vào thẻ span, tạo khung bo tròn và màu nền-->
+									<strong>Full Stack Developer - Công ty Y</strong> <br>
+									<em>05/2022 -  <span>Hiện tại</span></em>
+								</p>
+								<p>
+									- Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã có. <br>
+									- Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL (MySQL, SQLServer, NoSQL, ...)
+									và viết được các câu truy vấn. <br>
+									- Sử dụng ngôn ngữ server-side (Python, Java, ...) để xây dựng các Web Service.
+								</p>
+							</li>
+							<li>
+								<p>
+									<strong>Web Designer - Công ty X</strong> <br>
+									<em>06/2021 - 04/2022</em> <br>
+								</p>
+								<p>
+									- Thiết kế Website dự trên yêu cầu của khách hàng. <br>
+									- Sử dụng các công cụ: Figma, Canva, PTS. <br>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--onmousemove khi di chuột vào thẻ div job-info-table , hiển thị button viewMoreLess-->
+				<!--onmouseout khi di chuột vào thẻ div job-info-table , tắt hiển thị button viewMoreLess-->
+				<div class="job-info-table item-education" onmousemove="onView2Laptop()" onmouseout="offView2Laptop()">
+					<div class="row-1-job">
+						<div class="col-1-job">
+							<h1 class="section-title">Học vấn</h1>
+						</div>
+						<div class="col-2-job">
+							<i class="ic-pencil" style="font-size: 40px;"></i>
+						</div>
+					</div>
+					<!--tương tự nút button phần kinh nghiệm nhưng ta thay đổi id và hàm viewMore2() tương tự viewMore() trong phần JS-->
+					<button id="viewMoreLess2Laptop" class="viewMoreLess" onclick="viewMore2Laptop()" style="display: none;">
+						<p id="ctviewMoreLess2Laptop" style="font-size: 14px; color: black;">
+							<i class="fa-solid fa-caret-up fa-flip-vertical" style="font-size: 18px;"></i>
+							VIEW MORE
+						</p>
+					</button>
+					<div id="row-2-job2Laptop"class="row-2-job" style="display: none;">
+						<ul style="list-style-type: none;">
+							<li>
+								<p>
+									<strong>FUNiX</strong> <br>
+									<em>06/2021 - 05/2022</em>
+								</p>
+								<p>
+									- Tốt nghiệp chứng chỉ doanh nghiệp nhánh Fullstack. <br>
+									- GPA: 9 / 10
+								</p>
+							</li>
+							<li>
+								<p>
+									<strong>Cử nhân - ĐH FPT</strong> <br>
+									<em>08/2016 - 07/2019</em>
+								</p>
+								<p>
+									- Chuyên ngành: Kỹ thuật phần mềm. <br>
+									- GPA: 3.2 / 4
+								</p>	 
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--onmousemove khi di chuột vào thẻ div job-info-table , hiển thị button viewMoreLess-->
+				<!--onmouseout khi di chuột vào thẻ div job-info-table , tắt hiển thị button viewMoreLess-->
+				<div class="job-info-table item-activity" onmousemove="onView3Laptop()" onmouseout="offView3Laptop()">
+					<div class="row-1-job">
+						<div class="col-1-job">
+							<h1 class="section-title">Hoạt động</h1>
+						</div>
+						<div class="col-2-job">
+							<i class="ic-toolbox" style="font-size: 40px;"></i>
+						</div>
+					</div>
+					<!--tương tự nút button phần kinh nghiệm nhưng ta thay đổi id và hàm viewMore3() tương tự viewMore() trong phần JS-->
+					<button id="viewMoreLess3Laptop" class="viewMoreLess" onclick="viewMore3Laptop()" style="display: none;">
+						<p id="ctviewMoreLess3Laptop" style="font-size: 14px; color: black;">
+							<i class="fa-solid fa-caret-up fa-flip-vertical" style="font-size: 18px;"></i>
+							VIEW MORE
+						</p>
+					</button>
+					<div id="row-2-job3Laptop" class="row-2-job" style="display: none;">
+						<ul style="list-style-type: none;">
+							<li>
+								<p>
+									<strong>FPT Edu Hackathon 2019</strong> <br>
+									<em>03/2019 - 05/2019</em>
+								</p>
+								<p>
+									- Giải 3 bảng A <br>
+									- Đề tài: Trang web về phân loại rác thải.
+								</p>
+							</li>
+							<li>
+								<p>
+									<strong>Câu lạc bộ Z</strong> <br>
+									<em>08/2016 - 08/2017</em>
+								</p>
+								<p>
+									- Trưởng ban chuyên môn
+								</p>
+							</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+				<!--onmousemove khi di chuột vào thẻ div job-info-table , hiển thị button viewMoreLess-->
+				<!--onmouseout khi di chuột vào thẻ div job-info-table , tắt hiển thị button viewMoreLess-->
+				<div class="job-info-table item-hobby" onmousemove="onView4Laptop()" onmouseout="offView4Laptop()">
+					<!--Tạo 2 hàng 4 cột để bỏ 4 icon hàng 1 và nội dung hàng 2-->
+					<div class="row-1-job">
+						<div class="col-1-job">
+							<h1 class="section-title">Sở thích</h1>
+						</div>
+						<div class="col-2-job">
+							<i class="ic-telescope" style="font-size: 40px;"></i>
+						</div>
+					</div>
+					<!--tương tự nút button phần kinh nghiệm nhưng ta thay đổi id và hàm viewMore4() tương tự viewMore() trong phần JS-->
+					<button id="viewMoreLess4Laptop" class="viewMoreLess" onclick="viewMore4Laptop()" style="display: none;">
+						<p id="ctviewMoreLess4Laptop" style="font-size: 14px; color: black;">
+							<i class="fa-solid fa-caret-up fa-flip-vertical" style="font-size: 18px;"></i>
+							VIEW MORE
+						</p>
+					</button>
+					<div id="row-2-job4Laptop" class="row-2-job" style="display: none;">
+						<div class="row-2-hobby">
+							<!--nhúng thẻ i đã tải font awesome để gắn icon, tạo border radius-->
+							<div>
+								<i class="ic-megaphone"></i>
+								<br>
+								<p>Âm nhạc</p>
+							</div>
+							<div>
+								<i class="ic-strategy"></i>
+								<br>
+								<p>Chơi game</p>
+							</div>
+							<div>
+								<i class="ic-hotairballoon"></i>
+								<br>
+								<p>Du lịch</p>
+							</div>
+							<div>
+								<i class="ic-basket"></i>
+								<br>
+								<p>Nấu ăn</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--onmousemove khi di chuột vào thẻ div job-info-table , hiển thị button viewMoreLess-->
+				<!--onmouseout khi di chuột vào thẻ div job-info-table , tắt hiển thị button viewMoreLess-->
+				<div class="job-info-table item-language" onmousemove="onView5Laptop()" onmouseout="offView5Laptop()">
+					<div class="row-1-job">
+						<div class="col-1-job">
+							<h1 class="section-title">Ngôn ngữ</h1>
+						</div>
+						<div class="col-2-job">
+							<i class="ic-mic" style="font-size: 40px;"></i>
+						</div>
+					</div>
+					<!--tương tự nút button phần kinh nghiệm nhưng ta thay đổi id và hàm viewMore5() tương tự viewMore() trong phần JS-->
+					<button id="viewMoreLess5Laptop" class="viewMoreLess" onclick="viewMore5Laptop()" style="display: none;">
+						<p id="ctviewMoreLess5Laptop" style="font-size: 14px; color: black;">
+							<i class="fa-solid fa-caret-up fa-flip-vertical" style="font-size: 18px;"></i>
+							VIEW MORE
+						</p>
+					</button>
+					<div id="row-2-job5Laptop" class="row-2-job" style="display: none;">
+						<p>
+							<strong>Tiếng Anh - IELTS 7.0</strong> <br>
+							<!-- tạo thanh đánh giá trình độ qua class line -->
+							<div class="line">
+								<!--các thanh đánh giá trình độ bằng 3 thẻ div, thay đổi width và height cho phụ hợp tạo dạng line-->
+								<div></div>
+								<div></div>
+								<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+							</div> <br>
+							<strong>Tiếng Nhật - JLPT N4</strong> <br>
+							<div class="line">
+								<div></div>
+								<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+								<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+							</div> <br>
+						</p>
+					</div>
+				</div>
+				<!--onmousemove khi di chuột vào thẻ div job-info-table , hiển thị button viewMoreLess-->
+				<!--onmouseout khi di chuột vào thẻ div job-info-table , tắt hiển thị button viewMoreLess-->
+				<div class="job-info-table item-skill" onmousemove="onView6Laptop()" onmouseout="offView6Laptop()">
+					<div class="row-1-job">
+						<div class="col-1-job">
+							<h1 class="section-title">Kỹ năng</h1>
+						</div>
+						<div class="col-2-job">
+							<i class="ic-tools-2" style="font-size: 40px;"></i>
+						</div>
+					</div>
+					<!--tương tự nút button phần kinh nghiệm nhưng ta thay đổi id và hàm viewMore6() tương tự viewMore() trong phần JS-->
+					<button id="viewMoreLess6Laptop" class="viewMoreLess" onclick="viewMore6Laptop()" style="display: none;">
+						<p id="ctviewMoreLess6Laptop" style="font-size: 14px; color: black;">
+							<i class="fa-solid fa-caret-up fa-flip-vertical" style="font-size: 18px;"></i>
+							VIEW MORE
+						</p>
+					</button>
+					<div id="row-2-job6Laptop" class="row-2-job" style="display: none;">
+						<p>
+							<strong>HTML/CSS: Fundamental</strong> <br>
+							<div class="line">
+								<!--các thanh đánh giá trình độ bằng 3 thẻ div, thay đổi width và height cho phụ hợp tạo dạng line-->
+								<div></div>
+								<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+								<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+							</div> <br>
+							<strong>Javascript: Intermediate</strong> <br>
+							<div class="line">
+								<div></div>
+								<div></div>
+								<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+							</div> <br>
+							<strong>NodeJS: Intermediate</strong> <br>
+							<div class="line">
+								<div></div>
+								<div></div>
+								<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+							</div> <br>
+							<strong>Bootstrap 5: Fundamental</strong> <br>
+							<div class="line">
+								<div></div>
+								<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+								<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+							</div> <br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!--Thông tin về nghề nghiệp, học vấn cua tablet-->
+		<div id="job-infoTablet">
+			<!--Sử dụng Grid layout để tạo-->
+			<div class="grid-container-jobinfoTablet">
+				<!--onmousemove khi di chuột vào thẻ div job-info-table , hiển thị button viewMoreLess-->
+				<!--onmouseout khi di chuột vào thẻ div job-info-table , tắt hiển thị button viewMoreLess-->
+				<!-- chia lam 2 cot, cot 1 gom kinh nghiem, ky nang, ngon ngu
+									cot 2 gom hoat dong, hoc van, so thich -->
+				<div class="col1-experience-skill-language">
+					<div class="job-info-table item-experience" onmousemove="onViewTablet()" onmouseout="offViewTablet()">
+						<div class="row-1-job">
+							<div class="col-1-job">
+								<h1 class="section-title">Kinh nghiệm</h1>
+							</div>
+							<div class="col-2-job">
+								<!--Sử dụng icon bằng thẻ i nhúng fontawesome-->
+								<i class="ic-toolbox" style="font-size: 40px;"></i>
+							</div>
+						</div>
+						<!--nút button VIEW MORE khi di chuột vào thẻ div job-info-table thì display block, di chuột ra display none-->
+						<!--khi click vào thì thay đổi giữ VIEW LESS và VIEW MORE bằng hàm viewMore()-->
+						<button id="viewMoreLessTablet" class="viewMoreLess" onclick="viewMoreTablet()" style="display: none;">
+							<p id="ctviewMoreLessTablet" style="font-size: 14px; color: black;">
+								<i class="fa-solid fa-caret-up fa-flip-vertical" style="font-size: 18px;"></i>
+								VIEW MORE
+							</p>
+						</button>
+						<!--mặc định phần thông tin kinh nghiệm display none, khi click VIEW MORE thì display block, click tiếp thì display none-->
+						<div id="row-2-jobTablet" class="row-2-job" style="display: none;">
+							<ul style="list-style-type: none;">
+								<!-- Dùng persudo elements tạo time line dấu chấm xanh cho từng thẻ li -->
+								<li>
+									<p>
+										<!--Chữ "Hiện tại" bỏ vào thẻ span, tạo khung bo tròn và màu nền-->
+										<strong>Full Stack Developer - Công ty Y</strong> <br>
+										<em>05/2022 -  <span>Hiện tại</span></em>
+									</p>
+									<p>
+										- Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã có. <br>
+										- Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL (MySQL, SQLServer, NoSQL, ...)
+										và viết được các câu truy vấn. <br>
+										- Sử dụng ngôn ngữ server-side (Python, Java, ...) để xây dựng các Web Service.
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>Web Designer - Công ty X</strong> <br>
+										<em>06/2021 - 04/2022</em> <br>
+									</p>
+									<p>
+										- Thiết kế Website dự trên yêu cầu của khách hàng. <br>
+										- Sử dụng các công cụ: Figma, Canva, PTS. <br>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--onmousemove khi di chuột vào thẻ div job-info-table , hiển thị button viewMoreLess-->
+					<!--onmouseout khi di chuột vào thẻ div job-info-table , tắt hiển thị button viewMoreLess-->
+					<div class="job-info-table item-skill" onmousemove="onView6Tablet()" onmouseout="offView6Tablet()">
+						<div class="row-1-job">
+							<div class="col-1-job">
+								<h1 class="section-title">Kỹ năng</h1>
+							</div>
+							<div class="col-2-job">
+								<i class="ic-tools-2" style="font-size: 40px;"></i>
+							</div>
+						</div>
+						<!--tương tự nút button phần kinh nghiệm nhưng ta thay đổi id và hàm viewMore6() tương tự viewMore() trong phần JS-->
+						<button id="viewMoreLess6Tablet" class="viewMoreLess" onclick="viewMore6Tablet()" style="display: none;">
+							<p id="ctviewMoreLess6Tablet" class="ctviewMoreLess6" style="font-size: 14px; color: black;">
+								<i class="fa-solid fa-caret-up fa-flip-vertical" style="font-size: 18px;"></i>
+								VIEW MORE
+							</p>
+						</button>
+						<div id="row-2-job6Tablet" class="row-2-job row-2-job6" style="display: none;">
+							<p>
+								<strong>HTML/CSS: Fundamental</strong> <br>
+								<div class="line">
+									<!--các thanh đánh giá trình độ bằng 3 thẻ div, thay đổi width và height cho phụ hợp tạo dạng line-->
+									<div></div>
+									<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+									<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+								</div> <br>
+								<strong>Javascript: Intermediate</strong> <br>
+								<div class="line">
+									<div></div>
+									<div></div>
+									<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+								</div> <br>
+								<strong>NodeJS: Intermediate</strong> <br>
+								<div class="line">
+									<div></div>
+									<div></div>
+									<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+								</div> <br>
+								<strong>Bootstrap 5: Fundamental</strong> <br>
+								<div class="line">
+									<div></div>
+									<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+									<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+								</div> <br>
+							</p>
+						</div>
+					</div>
+					<!--onmousemove khi di chuột vào thẻ div job-info-table , hiển thị button viewMoreLess-->
+					<!--onmouseout khi di chuột vào thẻ div job-info-table , tắt hiển thị button viewMoreLess-->
+					<div class="job-info-table item-language" onmousemove="onView5Tablet()" onmouseout="offView5Tablet()">
+						<div class="row-1-job">
+							<div class="col-1-job">
+								<h1 class="section-title">Ngôn ngữ</h1>
+							</div>
+							<div class="col-2-job">
+								<i class="ic-mic" style="font-size: 40px;"></i>
+							</div>
+						</div>
+						<!--tương tự nút button phần kinh nghiệm nhưng ta thay đổi id và hàm viewMore5() tương tự viewMore() trong phần JS-->
+						<button id="viewMoreLess5Tablet" class="viewMoreLess" onclick="viewMore5Tablet()" style="display: none;">
+							<p id="ctviewMoreLess5Tablet" style="font-size: 14px; color: black;">
+								<i class="fa-solid fa-caret-up fa-flip-vertical" style="font-size: 18px;"></i>
+								VIEW MORE
+							</p>
+						</button>
+						<div id="row-2-job5Tablet" class="row-2-job" style="display: none;">
+							<p>
+								<strong>Tiếng Anh - IELTS 7.0</strong> <br>
+								<!-- tạo thanh đánh giá trình độ qua class line -->
+								<div class="line">
+									<!--các thanh đánh giá trình độ bằng 3 thẻ div, thay đổi width và height cho phụ hợp tạo dạng line-->
+									<div></div>
+									<div></div>
+									<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+								</div> <br>
+								<strong>Tiếng Nhật - JLPT N4</strong> <br>
+								<div class="line">
+									<div></div>
+									<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+									<div style="background-color: rgba(230, 227, 227, 0.881);"></div>
+								</div> <br>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col2-activity-education-hobby">
+					<!--onmousemove khi di chuột vào thẻ div job-info-table , hiển thị button viewMoreLess-->
+					<!--onmouseout khi di chuột vào thẻ div job-info-table , tắt hiển thị button viewMoreLess-->
+					<div class="job-info-table item-activity" onmousemove="onView3Tablet()" onmouseout="offView3Tablet()">
+						<div class="row-1-job">
+							<div class="col-1-job">
+								<h1 class="section-title">Hoạt động</h1>
+							</div>
+							<div class="col-2-job">
+								<i class="ic-toolbox" style="font-size: 40px;"></i>
+							</div>
+						</div>
+						<!--tương tự nút button phần kinh nghiệm nhưng ta thay đổi id và hàm viewMore3() tương tự viewMore() trong phần JS-->
+						<button id="viewMoreLess3Tablet" class="viewMoreLess" onclick="viewMore3Tablet()" style="display: none;">
+							<p id="ctviewMoreLess3Tablet" style="font-size: 14px; color: black;">
+								<i class="fa-solid fa-caret-up fa-flip-vertical" style="font-size: 18px;"></i>
+								VIEW MORE
+							</p>
+						</button>
+						<div id="row-2-job3Tablet" class="row-2-job" style="display: none;">
+							<ul style="list-style-type: none;">
+								<li>
+									<p>
+										<strong>FPT Edu Hackathon 2019</strong> <br>
+										<em>03/2019 - 05/2019</em>
+									</p>
+									<p>
+										- Giải 3 bảng A <br>
+										- Đề tài: Trang web về phân loại rác thải.
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>Câu lạc bộ Z</strong> <br>
+										<em>08/2016 - 08/2017</em>
+									</p>
+									<p>
+										- Trưởng ban chuyên môn
+									</p>
+								</li>
+							</ul>
+							</p>
+						</div>
+					</div>
+					<!--onmousemove khi di chuột vào thẻ div job-info-table , hiển thị button viewMoreLess-->
+					<!--onmouseout khi di chuột vào thẻ div job-info-table , tắt hiển thị button viewMoreLess-->
+					<div class="job-info-table item-education" onmousemove="onView2Tablet()" onmouseout="offView2Tablet()">
+						<div class="row-1-job">
+							<div class="col-1-job">
+								<h1 class="section-title">Học vấn</h1>
+							</div>
+							<div class="col-2-job">
+								<i class="ic-pencil" style="font-size: 40px;"></i>
+							</div>
+						</div>
+						<!--tương tự nút button phần kinh nghiệm nhưng ta thay đổi id và hàm viewMore2() tương tự viewMore() trong phần JS-->
+						<button id="viewMoreLess2Tablet" class="viewMoreLess" onclick="viewMore2Tablet()" style="display: none;">
+							<p id="ctviewMoreLess2Tablet" style="font-size: 14px; color: black;">
+								<i class="fa-solid fa-caret-up fa-flip-vertical" style="font-size: 18px;"></i>
+								VIEW MORE
+							</p>
+						</button>
+						<div id="row-2-job2Tablet"class="row-2-job" style="display: none;">
+							<ul style="list-style-type: none;">
+								<li>
+									<p>
+										<strong>FUNiX</strong> <br>
+										<em>06/2021 - 05/2022</em>
+									</p>
+									<p>
+										- Tốt nghiệp chứng chỉ doanh nghiệp nhánh Fullstack. <br>
+										- GPA: 9 / 10
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>Cử nhân - ĐH FPT</strong> <br>
+										<em>08/2016 - 07/2019</em>
+									</p>
+									<p>
+										- Chuyên ngành: Kỹ thuật phần mềm. <br>
+										- GPA: 3.2 / 4
+									</p>	 
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--onmousemove khi di chuột vào thẻ div job-info-table , hiển thị button viewMoreLess-->
+					<!--onmouseout khi di chuột vào thẻ div job-info-table , tắt hiển thị button viewMoreLess-->
+					<div class="job-info-table item-hobby" onmousemove="onView4Tablet()" onmouseout="offView4Tablet()">
+						<!--Tạo 2 hàng 4 cột để bỏ 4 icon hàng 1 và nội dung hàng 2-->
+						<div class="row-1-job">
+							<div class="col-1-job">
+								<h1 class="section-title">Sở thích</h1>
+							</div>
+							<div class="col-2-job">
+								<i class="ic-telescope" style="font-size: 40px;"></i>
+							</div>
+						</div>
+						<!--tương tự nút button phần kinh nghiệm nhưng ta thay đổi id và hàm viewMore4() tương tự viewMore() trong phần JS-->
+						<button id="viewMoreLess4Tablet" class="viewMoreLess" onclick="viewMore4Tablet()" style="display: none;">
+							<p id="ctviewMoreLess4Tablet" style="font-size: 14px; color: black;">
+								<i class="fa-solid fa-caret-up fa-flip-vertical" style="font-size: 18px;"></i>
+								VIEW MORE
+							</p>
+						</button>
+						<div id="row-2-job4Tablet" class="row-2-job" style="display: none;">
+							<div class="row-2-hobby">
+								<!--nhúng thẻ i đã tải font awesome để gắn icon, tạo border radius-->
+								<div>
+									<i class="ic-megaphone"></i>
+									<br>
+									<p>Âm nhạc</p>
+								</div>
+								<div>
+									<i class="ic-strategy"></i>
+									<br>
+									<p>Chơi game</p>
+								</div>
+								<div>
+									<i class="ic-hotairballoon"></i>
+									<br>
+									<p>Du lịch</p>
+								</div>
+								<div>
+									<i class="ic-basket"></i>
+									<br>
+									<p>Nấu ăn</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Phần nội dung chứng chỉ giải thưởng-->
+	<section id="certificate" class="bg-grey">
+		<div class="bg-certificate">
+			<!--Sử dụng Grid layout để tạo-->
+			<div class="container-certificate">
+				<div>
+					<h1 class="section-title">
+						Chứng chỉ - Giải thưởng
+					</h1>
+				</div>
+				<div class="row-certificate">
+					<div class="col-1-certificate">
+						<img src="images/Cert_WEB.png" alt="" width="100%">
+					</div>
+					<div class="col-2-certificate">
+						<p>
+							<strong>CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</strong> <br>
+						</p>
+						<p>
+							- Chứng chỉ thuộc chương trình CCDN <br>
+							- GPA: 8.6
+						</p>
+					</div>
+					<div class="col-3-certificate">
+						<img src="images/Cert_PRF.png" alt="" width="100%">
+					</div>
+					<div class="col-4-certificate">
+						<p>
+							<strong>CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</strong> <br>
+						</p>
+						<p>
+							- Chứng chỉ thuộc chương trình CCDN <br>
+							- GPA: 8.9
+						</p>
+					</div>
+				</div>
+				<div class="row-certificate" style="border-bottom: none;">
+					<div class="col-5-certificate">
+						<img src="images/Cert_DBI.png" alt="" width="100%">
+					</div>
+					<div class="col-6-certificate" style="border-right: none;">
+						<p>
+							<strong>CHỨNG CHỈ THIẾT KẾ DATABASE - FUNIX</strong>
+						</p>
+						<p>
+							- Chứng chỉ thuộc chương trình CCDN <br>
+							- GPA: 8.0
+						</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+		
+	</section>
+	<!--Phần nội dung Dự án-->
+	<section id="project">
+		<div class="title-project">
+			<h1 class="section-title">
+				Dự án
+			</h1>
+		</div>
+		<!--Sử dụng Grid layout để tạo-->
+		<div class="grid-container-project">
+			<!--Phần CV CÁ NHÂN-->
+			<div class="project-table" style="border: 1px solid #dfd9d978;">
+				<div>
+					<img src="images/project_1.png" alt="" width="100%">
+				</div>
+				<div style="border: 1px solid #dfd9d978;">
+					<!--thuộc tính target = '_blank' tạo tab mới khi click-->
+					<p class="small-title-project">
+						<a href="digital-cv-CVcanhan.html" 
+						style="text-decoration: none;" target="_blank">
+							<strong>CV CÁ NHÂN</strong>
+						</a>
+					</p>
+				</div>
+				<div style="border: 1px solid #dfd9d978;">
+					<!--Bo viền bằng border-radius và đổi màu nền cho nội dung 2021-->
+					<p class="bg-2021"><span>2021</span></p>
+					<p class="user-funix">
+						<i class="icon-user-1"></i> 
+						FUNIX
+					</p>
+					<p class="icon-lamp-developer">
+						<i class="icon-lamp"></i> 
+						Developer
+					</p>
+				</div>
+				<!--class description-mission-programminglanguage có tạo cho thẻ div width 100%-->
+				<div class="description-mission-programminglanguage" 
+				style="border: 1px solid #dfd9d978;">
+					<!--Tạo 2 cột tỷ lệ 30% và 70%-->
+					<div class="col-1-des-mis-pl">
+						<p>Mô tả</p>
+					</div>
+					<div class="col-2-des-mis-pl">
+						<p>
+							Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp.
+						</p>
+					</div>
+				</div>
+				<!--class description-mission-programminglanguage có tạo cho thẻ div width 100%-->
+				<div class="description-mission-programminglanguage" 
+				style="border: 1px solid #dfd9d978;">
+					<div class="col-1-des-mis-pl">
+						<p>Nhiệm vụ</p>
+					</div>
+					<div class="col-2-des-mis-pl">
+						<p>
+							- Phát triển code - Review code - <br>
+							Tối ưu code - Xử lý lỗi.
+						</p>
+					</div>
+				</div>
+				<!--class description-mission-programminglanguage có tạo cho thẻ div width 100%-->
+				<div class="description-mission-programminglanguage"
+				style="border: 1px solid #dfd9d978;">
+					<div class="col-1-des-mis-pl">
+						<p>Công nghệ</p>
+					</div>
+					<div class="col-2-des-mis-pl">
+						<p>
+							- HTML, CSS
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--Phần TRANG WEB QUẢN LÝ THÚ CƯNG-->
+			<div class="project-table" style="border: 1px solid #dfd9d978;">
+				<div>
+					<img src="images/project_2.png" alt="" width="100%">
+				</div>
+				<div style="border: 1px solid #dfd9d978;">
+					<p class="small-title-project">
+						<a href="digital-cv-Webthucung.html" 
+						style="text-decoration: none;" target="_blank">
+							<strong>TRANG WEB QUẢN LÝ THÚ CƯNG</strong>
+						</a>
+					</p>
+				</div>
+				<div style="border: 1px solid #dfd9d978;">
+					<!--Bo viền bằng border-radius và đổi màu nền cho nội dung 2021-->
+					<p class="bg-2021"><span>2021</span></p>
+					<p class="user-funix">
+						<i class="icon-user-1"></i> 
+						FUNIX
+					</p>
+					<p class="icon-lamp-developer">
+						<i class="icon-lamp"></i> 
+						Developer
+					</p>
+				</div>
+				<!--class description-mission-programminglanguage có tạo cho thẻ div width 100%-->
+				<div class="description-mission-programminglanguage" 
+				style="border: 1px solid #dfd9d978;">
+					<div class="col-1-des-mis-pl">
+						<p>Mô tả</p>
+					</div>
+					<div class="col-2-des-mis-pl">
+						<p>
+							Ứng dụng giúp quản lý các thông tin của thú cưng như: 
+							Cân nặng, giống, tình trạng tiêm chủng, ... 
+							Bao gồm các chức năng thêm / sửa / xóa.
+						</p>
+					</div>
+				</div>
+				<!--class description-mission-programminglanguage có tạo cho thẻ div width 100%-->
+				<div class="description-mission-programminglanguage" 
+				style="border: 1px solid #dfd9d978;">
+					<div class="col-1-des-mis-pl">
+						<p>Nhiệm vụ</p>
+					</div>
+					<div class="col-2-des-mis-pl">
+						<p>
+							- Phát triển code - Review code - <br>
+							Tối ưu code - Xử lý lỗi.
+						</p>
+					</div>
+				</div>
+				<!--class description-mission-programminglanguage có tạo cho thẻ div width 100%-->
+				<div class="description-mission-programminglanguage"
+				style="border: 1px solid #dfd9d978;">
+					<div class="col-1-des-mis-pl">
+						<p>Công nghệ</p>
+					</div>
+					<div class="col-2-des-mis-pl">
+						<p>
+							- HTML, CSS, Javascript
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--Phần TRANG WEB XEM TIN TỨC-->
+			<div class="project-table" style="border: 1px solid #dfd9d978;">
+				<div>
+					<img src="images/project_3.png" alt="" width="100%">
+				</div>
+				<div style="border: 1px solid #dfd9d978;">
+					<p class="small-title-project">
+						<a href="digital-cv-Webtintuc.html" 
+						style="text-decoration: none;" target="_blank">
+							<strong>TRANG WEB XEM TIN TỨC</strong>
+						</a>
+					</p>
+				</div>
+				<div style="border: 1px solid #dfd9d978;">
+					<!--Bo viền bằng border-radius và đổi màu nền cho nội dung 2021-->
+					<p class="bg-2021"><span>2021</span></p>
+					<p class="user-funix">
+						<i class="icon-user-1"></i> 
+						FUNIX
+					</p>
+					<p class="icon-lamp-developer">
+						<i class="icon-lamp"></i> 
+						Developer
+					</p>
+				</div>
+				<!--class description-mission-programminglanguage có tạo cho thẻ div width 100%-->
+				<div class="description-mission-programminglanguage" 
+				style="border: 1px solid #dfd9d978;">
+					<div class="col-1-des-mis-pl">
+						<p>Mô tả</p>
+					</div>
+					<div class="col-2-des-mis-pl">
+						<p>
+							Trang Web xem tin tức từ nhiều nguồn khác nhau, 
+							người dùng có thể tìm kiếm các tin tức dựa theo cá khóa.
+						</p>
+					</div>
+				</div>
+				<!--class description-mission-programminglanguage có tạo cho thẻ div width 100%-->
+				<div class="description-mission-programming language" 
+				style="border: 1px solid #dfd9d978;">
+					<div class="col-1-des-mis-pl">
+						<p>Nhiệm vụ</p>
+					</div>
+					<div class="col-2-des-mis-pl">
+						<p>
+							- Phát triển code - Review code - <br>
+							Tối ưu code - Xử lý lỗi.
+						</p>
+					</div>
+				</div>
+				<!--class description-mission-programminglanguage có tạo cho thẻ div width 100%-->
+				<div class="description-mission-programming language"
+				style="border: 1px solid #dfd9d978;">
+					<div class="col-1-des-mis-pl">
+						<p>Công nghệ</p>
+					</div>
+					<div class="col-2-des-mis-pl">
+						<p>
+							- HTML, CSS, Javascript
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Phần footer chứa icon liên hệ và đường dẫn-->
+	<section id="footer" class="bg-grey">
+		<!--Sử dụng Flex layout để tạo-->
+		<div class="flex-container">
+			<ul style="list-style-type: none;">
+				<li>
+					<!--Dùng thẻ a liên kết, thẻ i làm icon và thuộc tính target để tạo tab mới khi truy cập-->
+					<a href="https://vi-vn.facebook.com/login/device-based/regular/login/?login_attempt=1" target="_blank"
+					style="text-decoration: none; color: rgba(80, 79, 79, 0.881);">
+						<i class="icon-facebook-circled"></i>
+						<p>Facebook</p>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/login" target="_blank" 
+					style="text-decoration: none; color: rgba(80, 79, 79, 0.881);">
+						<i class="icon-linkedin-circled"></i>
+						<p>Linkedin</p>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/login" target="_blank"
+					style="text-decoration: none; color: rgba(80, 79, 79, 0.881);">
+						<i class="icon-github-circled"></i>
+						<p>Github</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+</body>
+<!--liên kết qua Javascript để tạo thêm tương tác cho trang web qua file main.js-->
+<script src="JS/main.js"></script>
+
+</html>

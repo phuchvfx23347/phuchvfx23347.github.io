@@ -1,0 +1,511 @@
+/* file CSS viết cho cấu hình tablet */
+@media screen and (max-width: 992px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    :root {
+        --white-light: #f2f2f2e8;
+        --white: #fff;
+        --black: #000;
+        --blue-light: rgb(32, 172, 248);
+        --secon: #dfd9d978;
+        --gray: rgba(84, 84, 84, 0.881);
+        --grey: rgba(236, 236, 236, 0.949);
+        --or: rgb(237, 137, 62);
+        --white-blue: rgb(242, 244, 255);
+    }
+    p {
+        color: var(--gray);
+        line-height: 1.5;
+        font-size: 13px;
+        margin-bottom: 3%;
+    }
+    li {
+        color: var(--gray);
+        line-height: 1.5;
+        font-size: 13px;
+    }
+    #personal-info li {
+        line-height: 2;
+    }
+    strong {
+        color: rgb(33, 33, 33); 
+        font-weight: 549.9999;
+    }
+    .img-banner {
+        background-image: url(../images/banner.jpg);
+        background-size: auto;
+        height: 90vh;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: top;
+        position: relative;
+    }
+    .img-filter {
+        background-color: #000;
+        opacity: 0.45;
+        position: absolute;
+        width: 100%;
+        height: 90vh;
+    }
+    #banner {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        color: var(--white-light);
+        font-weight: 5;
+        transform: translate(0%,80%);
+        z-index: 1;
+    }
+    #banner h1 {
+        font-size: 45px;
+    }
+    #banner span {
+        font-size: 16px;
+    }
+    #nav-bar {
+        width: 100%;
+        margin: auto;
+        margin-top: -5px;
+    }
+    #nav-bar .flex-container{
+        border-bottom: 1px solid var(--secon);
+        border-top: 1px solid var(--secon);
+    }
+    #nav-bar .flex-container .menu {
+        border: 1px solid var(--secon);
+        width: 130px;
+        height: 70px;
+        line-height: 65px;
+        font-size: 13px;
+        text-align: center;
+        font-weight: 500;
+    }
+    .avt-img {
+        border: none; 
+        width: 20px; 
+        position: relative;
+    }
+    #nav-bar img {
+        display: none;
+    }
+    #nav-bar {
+        text-align: center;
+    }
+    #nav-bar img {
+        position: absolute;
+        width: 190px;
+        border-radius: 50%;
+        border: 8px solid var(--white);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        top: -88%;
+        left: 18%;
+        height: 190 px;
+    }
+    #nav-bar a {
+        text-decoration: none;
+        color: var(--black);
+    }
+    #nav-bar a:hover {
+        font-size: 14px;
+        text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #nav-bar .menu:hover {
+        border-bottom: 3px solid var(--blue-light);
+    }
+    .grid-container-infomyself {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 440px;
+        justify-content: center;
+        
+    }
+    .section-title {
+        font-weight: 400;
+        font-size: 23px;
+    }
+    #target {
+        background-color: var(--white-light);
+        text-align:left;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 20%;
+    }
+    #target p {
+        font-size: 13px;
+        margin-top: 25px;
+        letter-spacing: 0px;
+    }
+    #personal-info {
+        background: var(--grey);
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 20%;
+        padding-bottom: 0%;
+    }
+    #personal-info ul{
+        list-style-type: none; 
+        margin-top: 25px; 
+        margin-bottom: 25px;
+        padding-left: 0px;
+        line-height: 0.5;
+        color: var(--gray);
+        font-size: 14px;
+    }
+    #job-infoLaptop {
+        display: none;
+    }
+    #job-infoTablet {
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .grid-container-jobinfoTablet {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 260px 260px;
+        column-gap: 25px;
+        row-gap: 3vh;
+        justify-content: center;
+    }
+    .col1-experience-skill-language {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: max-content max-content max-content;
+        row-gap: 3vh;
+    }
+    .col2-activity-education-hobby {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: max-content max-content max-content;
+        row-gap: 3vh;
+    }
+    .job-info-table {
+        padding: 20px; 
+        border: 2px solid var(--secon);
+    }
+    .item-experience {
+        height: fit-content;
+    }
+    .item-education {
+        height: fit-content;
+    }
+    .item-activity {
+        height: fit-content;
+    }
+    .item-hobby {
+        height: fit-content;
+    }
+    .item-language {
+        height: fit-content;
+    }
+    .item-skill {
+        height: fit-content;
+    }
+    .row-1 {
+        width: 100%;
+    }
+    .col-1-job {
+        width: 60%;
+        float: left;
+        height: auto;
+        height: 100px;
+        padding-top: 30px;
+        text-align: start;
+    }
+    .col-2-job {
+        width: 40%;
+        display: inline-block;
+        height: 100px;
+        padding-top: 0px;
+        text-align: start;
+    }
+    .row-2 {
+        width: 100%;
+        float: left;
+        line-height: 1.5;
+    }
+    .row-2-job strong{
+        font-size: 14px;
+    }
+    #job-info li {
+        position: relative;
+        margin-left: 9%;
+        margin-bottom: 9%;
+    }
+    /* Dùng persudo elements tạo time line dấu chấm xanh */
+    #job-info li::before {
+        content: '';
+        position: absolute;
+        background-color: var(--blue-light);
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        left: -10%;
+        top: 3%;
+    }
+    .job-info-table span {
+        background-color: var(--blue-light);
+        border-radius: 8px;
+        color: var(--white);
+        font-size: 14px;
+        padding: 1.5px 9px;
+        border: 1px solid var(--blue-light);
+    }
+    .line {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    .line div {
+        background-color: var(--blue-light);
+        height: 3.5px;
+        width: 55px;
+        border-radius: 17.14%;
+    }
+    .row-2-hobby {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: 100px 100px;
+        row-gap: 10px;
+        text-align: center;
+        padding-top: 10px;
+        justify-items: center;
+    }
+    .row-2-hobby i{
+        border-radius: 50%;
+        border: 2px solid var(--blue-light) ;
+        font-size: 23px;
+        color: var(--blue-light);
+        font-weight: 200;
+        padding: 10.6px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .row-2-hobby p {
+        font-size: 13px;
+        letter-spacing: -0.2px;
+    }
+    .bg-certificate {
+        width: 100%;
+        background-color: var(--white-light);
+        padding-top: 80px;
+        height: 780px;
+    }
+    .container-certificate {
+        width: 560px;
+        margin: auto;
+        height: auto;
+    }
+    .row-certificate {
+        width: 100%;
+        height: auto;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        border-bottom: 1px solid var(--or);
+    }
+    .col-1-certificate {
+        height: auto;
+        order: 1;
+        padding-right: 6%;
+        border-right: 1px solid var(--or);
+    }
+    .col-2-certificate {
+        height: auto;
+        padding-left: 0px;
+        border-right: 1px solid var(--or);
+        margin-right: 0px;
+        padding-right: 35%;
+        order: 3;
+    }
+    .col-3-certificate {
+        padding-left: 6%;
+        order: 2;
+    }
+    .col-4-certificate {
+        height: auto;
+        padding-left: 6%;
+        padding-right: 35%;
+        order: 3;
+    }
+    .col-5-certificate {
+        padding-right: 3%;
+        grid-column: 1/3;
+        width: 50%;
+    }
+    .col-6-certificate {
+        padding-left: 0px;
+        padding-right: 35%;
+    }
+    .row-certificate p {
+        font-size: 13.5px;
+        font-weight: 349.5;
+        letter-spacing: -0.3px;
+        margin-bottom: 3%;
+    }
+    #project {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .title-project {
+        width: 560px; 
+        margin: auto; 
+        padding-bottom: 20px
+    }
+    .grid-container-project {
+        width: 560px;
+        display: grid;
+        grid-template-columns: repeat(3, 180px);
+        margin: auto;
+        column-gap: 10px;
+        height: auto;
+        
+    }
+    .project-table {
+        display: grid;
+        height: auto;
+        grid-template-rows: 122.49px 70px 70px auto auto auto;
+    }
+    .small-title-project {
+        padding-top: 6%; 
+        padding-left: 8%;
+        font-size: 13.5px;
+        font-weight: 400;
+    }
+    .bg-2021 {
+        float: left; 
+        margin-left: 5%;
+        margin-top: 8%;
+    }
+    .user-funix {
+        display: inline-block; 
+        margin-top: 3%; 
+        font-size: 12px; 
+    }
+    .user-funix i {
+        font-size: 16px;
+    }
+    .icon-lamp-developer {
+        display: block; 
+        margin-right: 13.2%;
+        margin-top: -5%;
+        text-align: end;
+        font-size: 12.5px; 
+    }
+    .icon-lamp-developer i {
+        font-size: 16px;
+    }
+    .project-table span {
+        background-color: var(--blue-light);
+        border-radius: 12px;
+        color: var(--white);
+        font-size: 13.5px;
+        padding: 3.5px 10px;
+        border: 1px solid var(--blue-light);
+    }
+    .description-mission-programminglanguage {
+        width: 100%;
+    
+    }
+    .col-1-des-mis-pl {
+        width: 30%;
+        float: left;
+        padding-top: 2%;
+        padding-left: 3%;
+        height: auto;
+    }
+    .col-2-des-mis-pl {
+        width: 70%;
+        display: inline-block;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        height: auto;
+    }
+    #footer {
+        background-color: var(--white-light);
+    }
+    #footer ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 21px;
+        height: 100px;
+    }
+    #footer li a {
+        display: flex;
+        align-items: center;
+    }
+    #footer i {
+        font-size: 29px;
+        color: var(--blue-light);
+    }
+    #footer p {
+        font-size: 16px;
+        margin: 0px 1px 0px 3px;
+    }
+    /* tạo hiệu ứng khi di chuột đến */
+    #footer a p:hover{
+        color: var(--blue-light);
+    }
+
+
+    /* trang tablet digital cv dự án */
+    .grid-project {
+        width: 100%;
+        background-color: blue;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, auto);
+        gap: 15px;
+        padding: 15px;
+        height: fit-content;
+    }
+    .Goals {
+        float: left;
+        width: 100%;
+        background-color: var(--white-blue);
+        height: 65vh;
+        order: 1;
+    }
+    .Team {
+        background-color: var(--white-blue);
+        height: fit-content;
+        order: 3;
+    }
+    .Timeline {
+        background-color: var(--white-blue);
+        order: 5;
+        height: fit-content;
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .Scopes {
+        background-color: var(--white-blue);
+        height: fit-content;
+        order: 2;
+    }
+    .Primary {
+        background-color: var(--white-blue);
+        height: fit-content;
+        order: 4;
+    }
+    .row {
+        width: 100%;
+    }
+
+}
+

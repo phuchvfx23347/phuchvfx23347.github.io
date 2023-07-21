@@ -1,0 +1,563 @@
+/* file CSS viết cho cấu hình desktop */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --white-light: #f2f2f2e8;
+    --white: #fff;
+    --black: #000;
+    --blue-light: rgb(32, 172, 248);
+    --dark-line-light: rgba(207, 207, 207, 0.881);
+    --secon: #dfd9d978;
+    --gray: rgba(84, 84, 84, 0.881);
+    --grey: rgba(236, 236, 236, 0.949);
+    --or: rgb(237, 137, 62);
+    --blue: rgb(47, 0, 255);
+    --white-blue: rgb(242, 244, 255);
+    --yellow-light: rgb(251, 251, 157);
+    --blue-button: rgb(0, 134, 206);
+}
+p {
+    color: var(--gray);
+    line-height: 1.5;
+    font-size: 15px;
+    margin-bottom: 3%;
+}
+li {
+    color: var(--gray);
+    line-height: 1.5;
+    font-size: 15px;
+}
+#personal-info li {
+    line-height: 2;
+}
+strong {
+    color: rgb(33, 33, 33); 
+    font-weight: 549.9999;
+}
+.img-banner {
+    background-image: url(../images/banner.jpg);
+    background-size: auto;
+    height: 65vh;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+}
+.img-filter {
+    background-color: #000;
+    opacity: 0.45;
+    position: absolute;
+    width: 100%;
+    height: 65vh;
+}
+#banner {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    /* top: 8%; */
+    color: var(--white-light);
+    font-weight: 5;
+    transform: translate(0%,50%);
+    z-index: 1;
+}
+#banner span {
+    font-size: 17px;
+}
+#nav-bar {
+    width: 100%;
+    margin: auto;
+    margin-top: -5px;
+}
+#nav-bar .flex-container{
+    border-bottom: 1px solid var(--secon);
+    border-top: 1px solid var(--secon);
+}
+#nav-bar .flex-container .menu {
+    border: 1px solid var(--secon);
+    width: 180px;
+    height: 70px;
+    line-height: 65px;
+    font-size: 16px;
+    text-align: center;
+}
+.avt-img {
+    border: none; 
+    width: 300px; 
+    position: relative;
+}
+#nav-bar {
+    text-align: center;
+}
+#nav-bar img {
+    position: absolute;
+    width: 190px;
+    border-radius: 50%;
+    border: 8px solid var(--white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: -88%;
+    left: 18%;
+    height: 190 px;
+}
+#nav-bar a {
+    text-decoration: none;
+    color: var(--black);
+}
+#nav-bar a:hover {
+    font-size: 18px;
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#nav-bar .menu:hover {
+    border-bottom: 3px solid var(--blue-light);
+}
+.grid-container-infomyself {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 450px;
+    justify-content: center;
+    text-align: justify;
+}
+.section-title {
+    font-weight: 400;
+    font-size: 26px;
+}
+#target {
+    background-color: var(--white-light);
+    text-align: left;
+    padding-top: 13%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+#target p {
+    margin-top: 25px;
+    letter-spacing: -0.3px;
+}
+#personal-info {
+    background: var(--grey);
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 13%;
+}
+#personal-info ul{
+    list-style-type: none; 
+	margin-top: 25px; 
+    margin-bottom: 25px;
+    padding-left: 0px;
+    line-height: 1.9;
+    color: var(--gray);
+    font-size: 15.5px;
+}
+#personal-container button {
+    width: 30px;
+    height: 20px;
+    background-color: rgb(250, 63, 63);
+    border-radius: 5px;
+    color: var(--white);
+    border: 1px solid rgb(250, 63, 63);
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+#Hide {
+    display: inline-block;
+    margin-top: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px; 
+    margin-bottom: 25px;
+}
+#form-container input {
+    border: 1px solid var(--dark-line-light);
+    height: 35px;
+    border-radius: 6px;
+}
+#form-container input:hover {
+    box-shadow: 0px 0px 6.5px 0 rgba(32, 172, 248, 0.7), 
+    0 0px 1px 0 rgba(32, 172, 248, 0.69);
+    border-top: 1.5px solid var(--blue-light);
+    border-right: 1.5px solid var(--blue-light);
+    border-left: 1.5px solid var(--blue-light);
+}
+#form-container button {
+    width: 100px;
+    height: 38px;
+    background-color: var(--blue-button);
+    border-radius: 5px;
+    color: var(--white);
+    border: 1px solid var(--blue-button);
+}
+#job-infoLaptop {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#job-infoTablet {
+    display: none;
+}
+.grid-container-jobinfo {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: fit-content fit-content;
+    column-gap: 35px;
+    row-gap: 40px;
+    justify-content: center;
+}
+.job-info-table {
+    padding: 20px; 
+    border: 2px solid var(--secon);
+}
+.item-experience {
+    height: fit-content;
+}
+.item-education {
+    height: fit-content;
+}
+.item-activity {
+    height: fit-content;
+}
+.item-hobby {
+    height: fit-content;
+}
+.item-language {
+    height: fit-content;
+}
+.item-skill {
+    height: fit-content;
+}
+.row-1-job {
+    width: 100%;
+    text-align: center;
+}
+.col-1-job {
+    width: 70%;
+    float: left;
+    height: auto;
+    height: 100px;
+    padding-top: 30px;
+    text-align: start;
+}
+.col-2-job {
+    width: 30%;
+    display: inline-block;
+    height: 100px;
+    padding-top: 15px;
+}
+.viewMoreLess {
+    background-color: var(--yellow-light);
+    border: 1px solid var(--yellow-light); 
+    height: 25px; 
+    width: 55%; 
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.row-2-job {
+    width: 100%;
+    float: left;
+    line-height: 1.5;
+}
+.row-2-job strong{
+    font-size: 15px;
+}
+#job-info ul {
+    padding-left: 0px;
+}
+#job-info li {
+    position: relative;
+    margin-left: 9%;
+    margin-bottom: 9%;
+}
+/* Dùng persudo elements tạo time line dấu chấm xanh */
+#job-info li::before {
+    content: '';
+    position: absolute;
+    background-color: var(--blue-light);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    left: -10%;
+    top: 3%;
+}
+.job-info-table span {
+    background-color: var(--blue-light);
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 14px;
+    padding: 1.5px 9px;
+    border: 1px solid var(--blue-light);
+}
+.line {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+}
+.line div {
+    background-color: var(--blue-light);
+    height: 3.5px;
+    width: 55px;
+    border-radius: 17.14%;
+}
+.row-2-hobby {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: 100px;
+    text-align: center;
+    padding-top: 10px;
+    justify-items: center;
+}
+.row-2-hobby i{
+    border-radius: 50%;
+    border: 2px solid var(--blue-light) ;
+    font-size: 23px;
+    color: var(--blue-light);
+    font-weight: 200;
+    padding: 10.6px;
+    width: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row-2-hobby p {
+    font-size: 13px;
+    letter-spacing: -0.2px;
+}
+.bg-certificate {
+    width: 100%;
+    background-color: var(--white-light);
+    padding-top: 40px;
+    height: 430px;
+}
+.container-certificate {
+    width: 960px;
+    margin: auto;
+    height: auto;
+}
+.row-certificate {
+    width: 100%;
+    height: auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: grid;
+    grid-template-columns: repeat(2,18% 32%);
+    border-bottom: 1px solid var(--or);
+}
+
+.col-2-certificate {
+    height: auto;
+    padding-left: 6%;
+    border-right: 1px solid var(--or);
+    margin-right: 4%;
+}
+.col-4-certificate {
+    height: auto;
+    padding-left: 6%;
+}
+.col-6-certificate {
+    height: auto;
+    padding-left: 6%;
+    border-right: 1px solid var(--or);
+    margin-right: 4%;
+}
+.row-certificate p {
+    font-size: 14px;
+    font-weight: 330;
+    letter-spacing: -0.3px;
+}
+#project {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.title-project {
+    width: 960px; 
+    margin: auto; 
+    padding-bottom: 20px
+}
+.grid-container-project {
+    width: 960px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    margin: auto;
+    column-gap: 35px;
+    height: auto;
+    
+}
+.project-table {
+    display: grid;
+    height: auto;
+    grid-template-rows: 204.89px 50px 50px auto auto auto;
+}
+.small-title-project {
+    padding-top: 4%; 
+    padding-left: 6%;
+}
+.small-title-project a strong:hover {
+    color: var(--blue-light);
+}
+.bg-2021 {
+    float: left; 
+    margin: 4%;
+}
+.user-funix {
+    display: inline-block; 
+    margin: 2%;  
+}
+.user-funix i {
+    font-size: 20px;
+}
+.icon-lamp-developer {
+    display: inline-block; 
+    margin: 2%;
+}
+.icon-lamp-developer i {
+    font-size: 20px;
+}
+.project-table span {
+    background-color: var(--blue-light);
+    border-radius: 12px;
+    color: var(--white);
+    font-size: 13.5px;
+    padding: 3.5px 10px;
+    border: 1px solid var(--blue-light);
+}
+.description-mission-programminglanguage {
+    width: 100%;
+
+}
+.col-1-des-mis-pl {
+    width: 30%;
+    float: left;
+    padding-top: 2%;
+    padding-left: 3%;
+    height: auto;
+}
+.col-2-des-mis-pl {
+    width: 70%;
+    display: inline-block;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: auto;
+}
+#footer {
+    background-color: var(--white-light);
+}
+#footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+    height: 100px;
+    margin-bottom: 0px;
+}
+#footer li a {
+    display: flex;
+    align-items: center;
+}
+#footer i {
+    font-size: 29px;
+    color: var(--blue-light);
+}
+#footer p {
+    font-size: 16px;
+    margin: 0px 1px 0px 3px;
+}
+/* tạo hiệu ứng khi di chuột đến */
+#footer a p:hover{
+    color: var(--blue-light);
+}
+
+/* trang laptop digital cv dự án */
+.grid-project {
+    width: 100%;
+    background-color: blue;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 25% auto;
+    grid-template-rows: 57vh 37.5vh;
+    gap: 15px;
+    padding: 15px;
+}
+.Goals {
+    background-color: var(--white-blue);
+    padding: 20px;
+    order: 1;
+}
+.Team {
+    background-color: var(--white-blue);
+    padding: 20px;
+    order: 2;
+}
+.Timeline {
+    background-color: var(--white-blue);
+    padding: 20px;
+    order: 3;
+    grid-row: 1/3;
+    grid-column: 3/4;
+}
+.Scopes {
+    background-color: var(--white-blue);
+    padding: 20px;
+    order: 4;
+}
+.Primary {
+    background-color: var(--white-blue);
+    padding: 20px;
+    order: 5;
+}
+.title-grid-project {
+    border-bottom: 1.6px solid var(--dark-line-light);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.title-grid-project h1 {
+    color: blue;
+    font-weight: bold;
+}
+
+.row {
+    width: 100%;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: fit-content;
+}
+.Goals .row {
+    border-bottom: 1px solid var(--dark-line-light);
+}
+.grid-project p{
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+.col-lg-3 {
+    padding-top: 10px;
+}
+.col-lg-3 i {
+    font-size: 25px;
+}
+.col-lg-9 {
+    padding-left: 20%;
+}
+.Timeline-num {
+    border-radius: 50%;
+    border: 2px solid rgb(97, 33, 33);
+    background-color: rgb(94, 67, 243);
+    color: var(--blue-light);
+    font-weight: 200;
+    padding: 8.6px;
+    width: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
